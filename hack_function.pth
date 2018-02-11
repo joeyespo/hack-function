@@ -1,0 +1,1 @@
+import sys, hack_function; hack_function.install() if sys else None

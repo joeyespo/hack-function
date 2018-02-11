@@ -6,7 +6,7 @@ def hack(obj=None, action='open', capture=False, **kwargs):
     Run `hack(hack)` for details, or visit:
     https://github.com/joeyespo/hack-function
     """
-    from os import environ, startfile, name as os_name
+    from os import environ, name as os_name
     from os.path import dirname, expanduser, join
     from sys import platform
     from subprocess import call
@@ -44,6 +44,8 @@ def hack(obj=None, action='open', capture=False, **kwargs):
             call(('xdg-open', filename))
             return 'xdg-open {filename}'.format(filename=filename)
         elif os_name == 'nt':
+            from os import startfile
+
             try:
                 startfile(filename, 'edit')
                 return 'edit {filename}'.format(filename=filename)
