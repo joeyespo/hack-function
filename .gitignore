@@ -1,6 +1,7 @@
 # Deployment files
 *.egg-info
 MANIFEST
+build
 dist
 
 # Environment files

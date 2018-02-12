@@ -36,7 +36,7 @@ def make_command(base, command_dir='install_dir'):
 
 setup(
     name='hack-function',
-    version='1.1.0',
+    version='1.2.0',
     description='"Goto Definition" for the Python Interpreter.',
     long_description=__doc__,
     author='Joe Esposito',
